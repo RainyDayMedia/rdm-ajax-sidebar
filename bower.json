@@ -1,0 +1,31 @@
+{
+  "name": "wp-ajax-sidebar",
+  "main": "wp-ajax-sidebar.js",
+  "version": "1.0.0",
+  "authors": [
+    "Todd Miller <todd@rainydaymedia.net>"
+  ],
+  "description": "JQuery module for WordPress using ajax to create a sidebar with ajaxable content.",
+  "keywords": [
+    "rainy",
+    "day",
+    "media",
+    "wordpress",
+    "ajax",
+    "sidebar",
+    "content"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/RainyDayMedia/wp-ajax-sidebar",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.1"
+  }
+}
