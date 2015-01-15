@@ -1,0 +1,80 @@
+/*
+Plugin Name: Rainy Ajax Sidebar Menu
+Plugin URI: https://github.com/RainyDayMedia/wp-ajax-sidebar
+Description: Create simple sidebar menus that load content into the main panel with ajax.
+Version: 1.0.0
+Author: Todd Miller
+Author URI: http://rainydaymedia.net/
+License: GPL2
+*/
+/*
+Copyright 2014  Todd Miller  (email : todd@rainydaymedia.net)
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License, version 2, as 
+published by the Free Software Foundation.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA  02110-1301  USA
+*/
+
+.rdm-ajax-sidebar-menu-items {
+	margin: 0;
+	list-style: none;
+}
+
+.rdm-ajax-sidebar-parent {
+	display: table;
+	width: 90%;
+	padding: 0.5em 1em;
+	cursor: pointer;
+	transition: all 0.3s;
+
+	span {
+		float: right;
+		vertical-align: middle;
+		transition: transform 0.3s;
+	}
+
+	a {
+		color: inherit;
+	}
+
+	&:hover {
+		background-color: black;
+		color: white;
+	}
+}
+
+.rdm-ajax-sidebar-current-parent {
+	background-color: black;
+	color: white;
+
+	span {
+		transform: rotate(180deg);
+	}
+}
+
+.rdm-ajax-sidebar-child-menu-items {
+	display: none;
+	margin-bottom: 0;
+	margin-left: 2em;
+	list-style: none;
+}
+
+.rdm-ajax-sidebar-child {
+	padding: 0.5em 0;
+	cursor: pointer;
+}
+
+.rdm-ajax-sidebar-current-child {
+	a {
+		color: blue;
+	}
+}
