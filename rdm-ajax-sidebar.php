@@ -203,13 +203,6 @@ class RDM_AjaxSidebar_Widget extends WP_Widget {
 	 */
 	public function form( $instance )
 	{
-		// enqueue admin scripts
-		//wp_enqueue_script( 'rdm-ajax-sidebar-script', plugins_url( 'rdm-ajax-sidebar.min.js', __FILE__ ), array( 'jquery' ), '', true );
-		//add_action( 'wp_footer', function() {
-			//echo '<script>rdmAjaxSidebarAdmin.init();</script>';
-		//}, 99 );
-		//add_action( 'wp_footer', array( $this, 'init_admin_script' ), 99 );
-
 		// get our current options
 		$title = isset( $instance['title'] ) ? $instance['title'] : '';
 		$nav_menu = isset( $instance['nav_menu'] ) ? $instance['nav_menu'] : '';

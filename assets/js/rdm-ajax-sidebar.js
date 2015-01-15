@@ -36,6 +36,7 @@ var rdmAjaxSidebar = ( function( $ ) {
 		// mostly working, but make sure external pages don't get the current parent class
 		if ( !$el.is( $current ) ) {
 			$el.addClass( "rdm-ajax-sidebar-current-parent" );
+			//$list.find( ".rdm-ajax-sidebar-current-child" ).removeClass( "rdm-ajax-sidebar-current-child" );
 
 			if ( !$child.length ) {
 				if ( typeof pageID !== "undefined" ) {
