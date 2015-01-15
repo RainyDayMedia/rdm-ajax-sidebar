@@ -1,70 +1,10 @@
-# WordPress Ajax Archive
+# WordPress Ajax Sidebar Menu
 
-JQuery module for WordPress that displays a sidebar list of sections with a ajax supported content panel.
+WordPress sidebar widget that creates an AJAX powered menu.
 
 ## Usage
 
-HTML
-
-```html
-<div class="sidebar left">
-	<ul id="example-sections">
-		<li data-sublist="sublist1">Section 1 <i class="fa fa-caret-right"></i></li>
-		<!-- class is important on this ul -->
-		<ul id="sublist1" class="sidebar-subsection">
-			<li data-page-id="example_page_id">Page Title</li>
-		</ul>
-		<li data-sublist="sublist2">Section 2 <i class="fa fa-caret-right"></i></li>
-		<!-- class is important on this ul -->
-		<ul id="sublist2" class="sidebar-subsection">
-			<li data-page-id="example_page_id">Page Title</li>
-		</ul>
-	</ul>
-</div>
-
-<div id="example-content" class="right">
-	<!-- Initial Page Content -->
-</div>
-
-<script>ajaxSidebar.init("example-sections", "example-content");</script>
-
-```
-
-Enqueue your scripts in your theme's function.php file
-
-```php
-add_action( 'wp_enqueue_scripts', 'custom_scripts' );
-function custom_scripts()
-{
-	wp_enqueue_script( 'rdm-ajax-sidebar-script', get_template_directory_uri() . '/assets/js/dist/wp-ajax-sidebar.min.js', array(), '20121208', true );
-
-	// This line is of extreme importance. Without localizing this script, ajax will not work on your page.
-	wp_localize_script( 'rdm-ajax-sidebar-script', 'ajax_object', array( 'ajax_url' => admin_url( 'admin-ajax.php' )));
-}
-```
-
-Now, include an action and handler in your theme's function.php file
-
-```php
-add_action( 'wp_ajax_load_page_content', 'exampleSidebarHandler');
-add_action( 'wp_ajax_nopriv_load_page_content', 'exampleSidebarHandler');
-
-function exampleSidebarHandler()
-{
-	global $wpdb;
-
-	$pageID = $_POST['pageID'];
-	$output = "";
-
-	// HTML for your content area
-	$output .= '<h3>'.get_the_title( $pageID ).'</h3>';
-	$output .= '<div class="l-vmargin"></div>';
-	$output .= apply_filters( 'the_content', get_post_field( 'post_content', $pageID ) );
-
-	echo $output;
-	die();
-}
-```
+Install the plugin in wp-content/plugins. Add a widget to a sidebar. Go from there.
 
 ### Author
 
