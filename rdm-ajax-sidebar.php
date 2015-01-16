@@ -11,7 +11,7 @@ License: GPL2
 Copyright 2014  Todd Miller  (email : todd@rainydaymedia.net)
 
 This program is free software; you can redistribute it and/or modify
-it under the terms of the GNU General Public License, version 2, as 
+it under the terms of the GNU General Public License, version 2, as
 published by the Free Software Foundation.
 
 This program is distributed in the hope that it will be useful,
@@ -71,8 +71,8 @@ class RDM_AjaxSidebar_Widget extends WP_Widget {
 	function __construct() {
 		parent::__construct(
 			'rdm_widget', // Base ID
-			'Rainy Ajax Sidebar Menu', // Name
-			array( 'description' => 'A Rainy Day Widget to create an Ajax powered Sidebar Menu.' ) // Args
+			'RDM Ajax Sidebar Menu', // Name
+			array( 'description' => 'An RDM Widget to create an Ajax powered Sidebar Menu.' ) // Args
 		);
 	}
 
@@ -80,7 +80,7 @@ class RDM_AjaxSidebar_Widget extends WP_Widget {
 	 * Echo the widget content.
 	 *
 	 * Subclasses should over-ride this function to generate their widget code.
-	 *	 
+	 *
 	 * @access public
 	 *
 	 * @param array $args     Display arguments including before_title, after_title,
@@ -142,10 +142,10 @@ class RDM_AjaxSidebar_Widget extends WP_Widget {
 						<li data-page-id="<?php echo $item->object_id; ?>" class="rdm-ajax-sidebar-parent"><a href="<?php echo $item->url; ?>"><?php echo $item->title; ?></a></li>
 					<?php endif; ?>
 				<?php endif; ?>
-				
+
 				<?php if ( $hasChildren ) : ?>
 					<ul id="<?php echo $item->ID; ?>" class="rdm-ajax-sidebar-child-menu-items">
-					
+
 					<?php foreach ( $items_with_children[$item->ID] as $child_item ) : ?>
 						<?php if ( $child_item->type == "custom" ) : ?>
 							<li class="rdm-ajax-sidebar-child"><a href="<?php echo $child_item->url; ?>" target="_blank"><?php echo $child_item->title; ?></a></li>
@@ -153,10 +153,10 @@ class RDM_AjaxSidebar_Widget extends WP_Widget {
 							<li data-page-id="<?php echo $child_item->object_id; ?>" class="rdm-ajax-sidebar-child"><a href="<?php echo $child_item->url; ?>"><?php echo $child_item->title; ?></a></li>
 						<?php endif; ?>
 					<?php endforeach; ?>
-					
+
 					</ul>
 				<?php endif; ?>
-			
+
 			<?php endforeach; ?>
 
 			</ul>
@@ -224,7 +224,7 @@ class RDM_AjaxSidebar_Widget extends WP_Widget {
 		}
 		?>
 		<p>
-			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label> 
+			<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label>
 			<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo $title; ?>">
 		</p>
 		<p>

@@ -1,33 +1,31 @@
-# WordPress Ajax Sidebar Menu
+# A WordPress Ajax Sidebar Menu
 
-WordPress sidebar widget that creates an AJAX powered menu.
+A WordPress widget that creates an AJAX powered menu for your theme's sidebar.
 
-## Usage
+## Installation and Usage
 
-Install the plugin in wp-content/plugins. Add a widget to a sidebar. Go from there.
+**Manual Installation**
+
+1. ☞ [Download the latest stable release]() ☜ 
+![]()
+2. Navigate to `Plugins >> Add New >> Upload` 
+	 * Then select the `rdm-ajax-sidebar-0.0.1.zip` and upload
+3. Click _“Activate”_ 
+4. Navigate to `Apperance >> Widgets >> RDM Ajax Sidebar Menu`
+5. Drag to your desired sidebar
+6. Select your preferred Menu 
+7. click _“Save”_
+
+
+
+## Bugs
+
+If you happen to run into a issue ☞ [click here](https://github.com/RainyDayMedia/rdm-ajax-sidebar/issues/new) ☜ to let us know!
 
 ### Author
 
-Todd Miller <todd@rainydaymedia.net>
+Todd Miller Lead Developer (at)RDM <todd@rainydaymedia.net> -- [GitHub -@Toddses](https://github.com/Toddses)
 
 ### License
 
-Copyright (c) <2014> <Rainy Day Media, LLC>
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in
-all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-THE SOFTWARE.
+See here: 
