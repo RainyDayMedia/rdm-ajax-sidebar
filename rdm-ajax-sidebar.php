@@ -1,6 +1,6 @@
 <?php
 /*
-Plugin Name: Rainy Ajax Sidebar Menu
+Plugin Name: RDM Ajax Sidebar Menu
 Plugin URI: https://github.com/RainyDayMedia/wp-ajax-sidebar
 Description: Create simple sidebar menus that load content into the main panel with ajax.
 Version: 1.0.0

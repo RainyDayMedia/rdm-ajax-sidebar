@@ -18,9 +18,11 @@ A WordPress widget that creates an AJAX powered menu for your theme's sidebar.
 
 
 
-## Bugs
+## Bugs & Support
 
 If you happen to run into a issue ☞ [click here](https://github.com/RainyDayMedia/rdm-ajax-sidebar/issues/new) ☜ to let us know!
+
+We don't provide support for the plugin... _you be the judge is it a bug or do you need help using it?_
 
 ### Author
 
@@ -28,4 +30,4 @@ Todd Miller Lead Developer (at)RDM <todd@rainydaymedia.net> -- [GitHub -@Toddses
 
 ### License
 
-See here: 
+You'll find it among the source as [License](https://github.com/RainyDayMedia/rdm-ajax-sidebar/blob/master/LICENSE).
