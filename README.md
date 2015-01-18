@@ -6,7 +6,7 @@ A WordPress widget that creates an AJAX powered menu for your theme's sidebar.
 
 **Manual Installation**
 
-1. ☞ [Download the latest stable release]() ☜ 
+1. ☞ [Download the latest stable release](https://github.com/RainyDayMedia/rdm-ajax-sidebar/archive/v0.0.1.zip) ☜ 
 2. Navigate to `Plugins >> Add New >> Upload` 
 	 * Then select the `rdm-ajax-sidebar-v0.0.1.zip` and upload
 3. Click _“Activate”_ 
@@ -17,7 +17,7 @@ A WordPress widget that creates an AJAX powered menu for your theme's sidebar.
 
 **For those who like GIFs**
 
-![]()
+![](https://raw.githubusercontent.com/RainyDayMedia/rdm-ajax-sidebar/master/upload.gif)
 
 ## Bugs & Support
 
