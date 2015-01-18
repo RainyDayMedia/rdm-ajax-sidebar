@@ -17,8 +17,11 @@ A WordPress widget that creates an AJAX powered menu for your theme's sidebar.
 
 **For those who'd rather see a visual:**
 
+| Installation           | Front-end Usage       |
+| ---------------------- |:---------------------:|
+|![](http://cl.ly/ZLrK/upload.gif =500x) | ![](http://cl.ly/ZLI0/usage.gif =300x)|
 
-Usage - ![]()
+
 
 ## Bugs & Support
 
