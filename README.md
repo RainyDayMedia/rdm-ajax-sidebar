@@ -14,6 +14,7 @@ A WordPress widget that creates an AJAX powered menu for your theme's sidebar.
 5. Drag to your desired sidebar
 6. Select your preferred Menu 
 7. click _“Save”_
+8. Enjoy ☺
 
 **For those who'd rather see a visual:**
 
